@@ -13,6 +13,21 @@ function App() {
 
   const generateNumbers = ()=>{
     console.log('Test')
+    const numbersStorage:[] = [];
+    while (numbersStorage.length < 5) {
+      const randomNumber:number = Math.floor(Math.random() * 28) + 5;
+
+      if (numbersStorage.indexOf(randomNumber) === -1) {
+        numbersStorage.push(randomNumber);
+      }
+    }
+
+    console.log(numbersStorage)
+    // setLotteryBall(
+    //     [
+    //
+    //     ]
+    // )
   }
 
   return (
