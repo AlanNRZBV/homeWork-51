@@ -1,10 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import LotteryBall from "../LotteryBall/LotteryBall.tsx";
 
 function App() {
+  const [lotteryBall, setLotteryBall] = useState([
+    {number: 5},
+    {number: 11},
+    {number: 16},
+    {number: 23},
+    {number: 32}
+  ])
 
   return (
     <div className="lottery">
