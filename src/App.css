@@ -4,3 +4,28 @@
   padding: 2rem;
   text-align: center;
 }
+
+.balls{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #242424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball:not(:last-child){
+  margin-right: 8px;
+}
+
+.number {
+  font-size: 1rem;
+  color: #242424;
+}
