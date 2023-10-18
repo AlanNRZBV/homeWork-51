@@ -11,6 +11,10 @@ function App() {
     {number: 32}
   ])
 
+  const generateNumbers = ()=>{
+    console.log('Test')
+  }
+
   return (
     <div className="lottery">
       <div className="balls">
@@ -20,7 +24,7 @@ function App() {
         <LotteryBall number={23}></LotteryBall>
         <LotteryBall number={32}></LotteryBall>
       </div>
-      <button>Try!</button>
+      <button onClick={generateNumbers}>Try!</button>
     </div>
   )
 }
